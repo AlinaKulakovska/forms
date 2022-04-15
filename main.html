@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Практична3</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Starbuzz Cava Machine.</h1>
+    </header>
+    <h2>Заповніть наступну форму і натисніть кнопку «Замовити»,
+        щоб оформити замовлення</h2>
+
+    <div class="container">
+        <form id="form" action="" method="POST" onsubmit="">
+            <fieldset>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Виберіть каву:</label></div>
+                    <div class="col-75">
+                        <select id="select">
+                            <option value="Домашня суміш" selected>Домашня суміш</option>
+                            <option value="Гватемала">Гватемала</option>
+                            <option value="Кенія">Кенія</option>
+                            <option value="Болівія">Болівія</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col-25"><label>Тип:</label></div>
+                    <div class="col-75"><input type="radio" name="type" value="beans" checked />кава в зернах
+                        <input type="radio" name="type" value="ground" />мелена кава</div>
+                </div>
+                <div class="row">
+                    <div class="col-25"><label>Кількість кави (чашки):</label></div>
+                    <div class="col-75"><input type="number" id="number" value="1" min="1" max="10" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-25"><label> Доставити до: </label></div>
+                    <div class="col-75"><input type="time" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Додаткові послуги:</label></div>
+                    <div class="col-75">
+                        <input type="checkbox" value="gift" /> подарункова упаковка
+                        <input type="checkbox" value="catalog" /> каталог продукції</div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Доставка продукції:</legend>
+                <label>ПІБ</label><input type="text" id="name"/>
+                <label>Адреса</label> <input type="text" id="address" />
+                <label>Телефон</label> <input type="tel" id="tel" />
+                <label>E-mail</label><input type="email" id="email" placeholder="Example: 123qwe@gmail.com" required />
+                <label>Коментар</label> <textarea id="subject" placeholder="Write something.."
+                    style="height:100px"></textarea>
+            </fieldset>
+            <input type="button" name="submit" value="Замовити" onclick="validateEmail(), myFunction()" />
+        </form>
+    </div>
+    <table id="table">
+        <tr>
+            <td>ПІБ: </td>
+            <td id="namep"></td>
+        </tr>
+        <tr>
+            <td>адреса: </td>
+            <td>
+                <p id="addressp"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>телефон: </td>
+            <td>
+                <p id="phonep"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>e-mail: </td>
+            <td>
+                <p id="emailp"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>тип кави: </td>
+            <td>
+                <p id="typep"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>кількість: </td>
+            <td>
+                <p id="quantityp"></p>
+            </td>
+        </tr>
+    </table>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

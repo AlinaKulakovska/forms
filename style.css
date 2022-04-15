@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: black 2px 2px 2px;
+}
+
+header{
+     background-color:#FED039;
+     background-image: repeating-linear-gradient(-45deg,
+         transparent,
+         transparent 30px,
+         black 40px,
+         black 40px);
+         box-shadow: -5px -5px 30px 5px lightgrey;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  input[type=text], select, textarea, input[type=tel], input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 6px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=button] {
+    background-color: #044caa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type=button]:hover {
+    background-color: #458ea0;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  table{
+    border: 1px solid black;
+    display: none;
+  }
+td{
+  border: 1px solid black;
+}
